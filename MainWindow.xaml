@@ -1,0 +1,27 @@
+﻿<Window x:Class="PROG6221PART3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG6221PART3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="543" VerticalAlignment="Top">
+        <Label Content="Recipe name" HorizontalAlignment="Left" Margin="102,144,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txbRecipeName" HorizontalAlignment="Left" Margin="102,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="30"/>
+        <TextBox x:Name="txbIgredients" HorizontalAlignment="Left" Margin="102,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="30"/>
+        <TextBox x:Name="txbFoodGroup" HorizontalAlignment="Left" Margin="102,296,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="30"/>
+        <Label Content="Ingredients" HorizontalAlignment="Left" Margin="102,208,0,0" VerticalAlignment="Top" Width="180" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Food Group" HorizontalAlignment="Left" Margin="102,267,0,0" VerticalAlignment="Top" Width="180" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Number of calories" HorizontalAlignment="Left" Margin="102,326,0,0" VerticalAlignment="Top" Width="180" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txbCalories" HorizontalAlignment="Left" Margin="102,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="30"/>
+        <Button x:Name="AddRecipe" Content="Add Recipe" HorizontalAlignment="Left" Margin="351,263,0,0" VerticalAlignment="Top" Width="138" Foreground="Black" Background="#FF28DD28" BorderBrush="#FF087B02" FontSize="14" FontWeight="Bold" Height="53" Click="AddRecipe_Click"/>
+        <Label x:Name="txbID" Content="Recipe ID" HorizontalAlignment="Left" Margin="102,75,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txbRecipeID" HorizontalAlignment="Left" Margin="102,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="30"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="523,346,0,0" VerticalAlignment="Top" Width="138" Foreground="Black" Background="#FFDD6328" BorderBrush="#FF087B02" FontSize="14" FontWeight="Bold" Height="52" Click="btnClear_Click" FontStyle="Italic"/>
+        <Label Content="Steps:" HorizontalAlignment="Left" Margin="400,129,0,0" VerticalAlignment="Top" Width="108" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txbSteps" HorizontalAlignment="Left" Margin="400,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" Height="79"/>
+        <Button x:Name="btnViewRecipres" Content="View Recipes" HorizontalAlignment="Left" Margin="351,346,0,0" VerticalAlignment="Top" Height="52" Width="138" Background="#FF22E8C4" FontWeight="Bold" FontSize="14" Click="btnViewRecipres_Click"/>
+
+    </Grid>
+</Window>
